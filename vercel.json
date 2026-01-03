@@ -10,7 +10,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/CES_2026_智能追蹤系統_v2_Final.html"
     }
   ]
 }

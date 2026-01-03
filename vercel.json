@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "ces-2026-tracker",
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

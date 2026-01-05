@@ -1559,8 +1559,7 @@
 
     // 解析 CSV 檔案
     function parseCSV(csvText) {
-        const lines = csvText.split('
-');
+        const lines = csvText.split('\n');
         const headers = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g, ''));
         const data = [];
 
@@ -1750,8 +1749,7 @@ Updated: ${result.updated}`
                         
                         // 疊加備註
                         if (options.importNotes && exhibitorData.notes) {
-                            const separator = '
---- 匯入紀錄 ' + new Date().toLocaleDateString() + ' ---
+                            const separator = '\n--- 匯入紀錄 ' + new Date().toLocaleDateString() + ' ---
 ';
                             existing.notes = existing.notes ? 
                                 existing.notes + separator + exhibitorData.notes : 

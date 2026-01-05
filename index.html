@@ -82,7 +82,6 @@
             background: rgba(255,255,255,0.3);
             transform: translateY(-2px);
         }
-        
 
         .export-btn {
             background: var(--success-color);
@@ -1326,55 +1325,11 @@
 
         // 頁面載入時初始化
         window.onload = init;
-    
-    
-    // 顯示匯入模態框
-    
-    // 關閉匯入模態框
-    
-    // 處理檔案選擇
-    
-    // 解析 CSV 檔案
-    
-    // 解析 CSV 行（處理引號內的逗號）
-    
-    // 顯示檔案預覽
-    
-    // 執行匯入
-    
-    // 顯示匯入進度
-    
-    // 處理匯入資料
-    
-    // 拖拽功能
-    
     // 在頁面載入後設定拖拽功能
     document.addEventListener('DOMContentLoaded', function() {
         setTimeout(setupDragAndDrop, 1000); // 延遲確保 DOM 完全載入
     });</script>
 
-    <!-- 匯入模態框 -->
-    
-                <div class="import-options">
-                    <h3 data-zh="匯入選項" data-en="Import Options">匯入選項</h3>
-                    <label class="checkbox-label">
-                        <input type="checkbox" id="mergeRecords" checked>
-                        <span data-zh="疊加同一廠商的多筆紀錄" data-en="Merge records for same exhibitor">疊加同一廠商的多筆紀錄</span>
-                    </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox" id="keepOriginal" checked>
-                        <span data-zh="保留原有紀錄" data-en="Keep original records">保留原有紀錄</span>
-                    </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox" id="importNotes">
-                        <span data-zh="匯入備註（以分隔線區分）" data-en="Import notes (separated by divider)">匯入備註（以分隔線區分）</span>
-                    </label>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn-secondary"  data-zh="取消" data-en="Cancel">取消</button>
-                <button id="confirmImport" class="btn-primary"  disabled data-zh="開始匯入" data-en="Start Import">開始匯入</button>
-            </div>
         </div>
     </div>
 </body>
